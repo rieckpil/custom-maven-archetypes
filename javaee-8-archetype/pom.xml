@@ -10,7 +10,7 @@
 	</parent>
 
 	<groupId>de.rieckpil</groupId>
-	<artifactId>javaee8-archetype</artifactId>
+	<artifactId>javaee-8-archetype</artifactId>
 	<version>1.0.0</version>
 	<name>Java EE 8 Archetype</name>
 
