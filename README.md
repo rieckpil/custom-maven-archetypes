@@ -2,6 +2,7 @@
 Repository for custom Maven Archetypes
 
 ## Java EE 8 with Microprofile 2.0.1
+[![version](https://img.shields.io/badge/latest%20version-1.0.1-brightgreen.svg)](https://search.maven.org/search?q=g:de.rieckpil.archetypes%20AND%20a:javaee8&core=gav)
 
 With this Maven archetype you can bootstrap a simple Java EE 8 application in seconds. This archetype contains the following files/dependencies:
 
