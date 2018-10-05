@@ -15,7 +15,7 @@ public class SampleResource {
 	private String message;
 
 	@GET
-	public Response samplmeMessage() {
+	public Response message() {
 		return Response.ok(message).build();
 	}
 

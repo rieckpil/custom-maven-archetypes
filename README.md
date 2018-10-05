@@ -5,8 +5,9 @@ Repository for custom Maven Archetypes
 
 With this Maven archetype you can bootstrap a simple Java EE 8 application in seconds. This archetype contains the following files/dependencies:
 
-* Java EE 8 API Dependency
-* Microprofile 2.0 Dependency
+* Java EE 8 API dependency
+* Microprofile 2.0.1 dependency
+* Mockito and JUnit dependencies for efficient testing
 * `beans.xml` with `bean-discovery-mode="all"`
 * `persistence.xml` configured for JTA persistence unit
 * `microprofile-config.properties` for configuration
