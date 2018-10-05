@@ -3,7 +3,7 @@ Repository for custom Maven Archetypes
 
 ## Java EE 8 with Microprofile 2.0
 
-This archetype contains the following files/dependencies:
+With this Maven archetype you can bootstrap a simple Java EE 8 application in seconds. This archetype contains the following files/dependencies:
 
 * Java EE 8 API Dependency
 * Microprofile 2.0 Dependency
@@ -13,10 +13,11 @@ This archetype contains the following files/dependencies:
 * JAX-RS configuration class
 * Sample JAX-RS REST endpoint (`/resources/sample`)
 * Dockerfile for Payara 5.183 deployment
+* Build and deploy script as `.sh` and `.bat` 
 
 ```
-mvn archetype:generate -DarchetypeGroupId=de.rieckpil \
-    -DarchetypeArtifactId=javaee-8-archetype \
+mvn archetype:generate -DarchetypeGroupId=de.rieckpil.archetypes \
+    -DarchetypeArtifactId=javaee8 \
     -DarchetypeVersion=1.0.0 \
     -DgroupId=<your project Group Id> \
     -DartifactId=<your project artifact Id>
@@ -25,5 +26,5 @@ mvn archetype:generate -DarchetypeGroupId=de.rieckpil \
 e.g.:
 
 ```
-mvn archetype:generate -DarchetypeGroupId=de.rieckpil -DarchetypeArtifactId=javaee-8-archetype -DarchetypeVersion=1.0.0 -DgroupId=de.rieckpil.blog -DartifactId=javaee-8-microservice
+mvn archetype:generate -DarchetypeGroupId=de.rieckpil.archetypes -DarchetypeArtifactId=javaee8 -DarchetypeVersion=1.0.0 -DgroupId=de.rieckpil.blog -DartifactId=javaee-8-microservice -DinteractiveMode=false
 ```

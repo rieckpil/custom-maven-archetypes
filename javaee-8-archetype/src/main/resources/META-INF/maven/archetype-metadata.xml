@@ -33,6 +33,7 @@
 				<include>README.md</include>
 				<include>Dockerfile</include>
 				<include>buildAndRun.sh</include>
+				<include>buildAndRun.bat</include>
 			</includes>
 		</fileSet>
 	</fileSets>
