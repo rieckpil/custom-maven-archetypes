@@ -1,7 +1,7 @@
 # Custom Maven Archetypes
 Repository for custom Maven Archetypes
 
-## Java EE 8 with Microprofile 2.0
+## Java EE 8 with Microprofile 2.0.1
 
 With this Maven archetype you can bootstrap a simple Java EE 8 application in seconds. This archetype contains the following files/dependencies:
 
@@ -24,8 +24,12 @@ mvn archetype:generate -DarchetypeGroupId=de.rieckpil.archetypes \
     -DartifactId=<your project artifact Id>
 ```
 
-e.g.:
+Bootstrap a new application with (active Docker daemon for the containerized deployment is required):
 
 ```
 mvn archetype:generate -DarchetypeGroupId=de.rieckpil.archetypes -DarchetypeArtifactId=javaee8 -DarchetypeVersion=1.0.0 -DgroupId=de.rieckpil.blog -DartifactId=javaee-8-microservice -DinteractiveMode=false
+cd javaee-8-microservice
+./buildAndRun.sh (or buildAndRun.cmd)
 ```
+
+After Payara successfully started visit `http://localhost:8080/resources/sample`
