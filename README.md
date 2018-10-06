@@ -25,12 +25,21 @@ mvn archetype:generate -DarchetypeGroupId=de.rieckpil.archetypes \
     -DartifactId=<your project artifact Id>
 ```
 
-Bootstrap a new application with (active Docker daemon for the containerized deployment is required):
+Bootstrapping and deploying a new application under **Windows** (Docker daemon needs to run):
 
 ```
 mvn archetype:generate -DarchetypeGroupId=de.rieckpil.archetypes -DarchetypeArtifactId=javaee8 -DarchetypeVersion=1.0.1 -DgroupId=de.rieckpil.blog -DartifactId=javaee-8-microservice -DinteractiveMode=false
 cd javaee-8-microservice
-./buildAndRun.sh (or buildAndRun.cmd)
+buildAndRun.bat
+```
+
+Bootstrapping and deploying a new application under **Linux/Mac** (Docker daemon needs to run):
+
+```
+mvn archetype:generate -DarchetypeGroupId=de.rieckpil.archetypes -DarchetypeArtifactId=javaee8 -DarchetypeVersion=1.0.1 -DgroupId=de.rieckpil.blog -DartifactId=javaee-8-microservice -DinteractiveMode=false
+cd javaee-8-microservice
+chmod +x buildAndRun.sh
+./buildAndRun.sh
 ```
 
 After Payara successfully started visit `http://localhost:8080/resources/sample`
