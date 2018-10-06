@@ -20,7 +20,7 @@ With this Maven archetype you can bootstrap a simple Java EE 8 application in se
 ```
 mvn archetype:generate -DarchetypeGroupId=de.rieckpil.archetypes \
     -DarchetypeArtifactId=javaee8 \
-    -DarchetypeVersion=1.0.0 \
+    -DarchetypeVersion=1.0.1 \
     -DgroupId=<your project Group Id> \
     -DartifactId=<your project artifact Id>
 ```
@@ -28,7 +28,7 @@ mvn archetype:generate -DarchetypeGroupId=de.rieckpil.archetypes \
 Bootstrap a new application with (active Docker daemon for the containerized deployment is required):
 
 ```
-mvn archetype:generate -DarchetypeGroupId=de.rieckpil.archetypes -DarchetypeArtifactId=javaee8 -DarchetypeVersion=1.0.0 -DgroupId=de.rieckpil.blog -DartifactId=javaee-8-microservice -DinteractiveMode=false
+mvn archetype:generate -DarchetypeGroupId=de.rieckpil.archetypes -DarchetypeArtifactId=javaee8 -DarchetypeVersion=1.0.1 -DgroupId=de.rieckpil.blog -DartifactId=javaee-8-microservice -DinteractiveMode=false
 cd javaee-8-microservice
 ./buildAndRun.sh (or buildAndRun.cmd)
 ```
