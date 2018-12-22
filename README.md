@@ -2,8 +2,8 @@
 
 Repository for custom Maven Archetypes:
 
-* [Java EE 8 with Microprofile 2.0.1](#java-ee-8-with-microprofile-2.0.1)
-* [Java EE 8 with Microprofile 2.0.1 for JSF development](#java-ee-8-with-microprofile-2.0.1-for-jsf-development)
+* [Java EE 8 with Microprofile 2.0.1](#java-ee-8-with-microprofile-201)
+* [Java EE 8 with Microprofile 2.0.1 for JSF development](#java-ee-8-with-microprofile-201-for-jsf-development)
 
 ## Java EE 8 with Microprofile 2.0.1
 
