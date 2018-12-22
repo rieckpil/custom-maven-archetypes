@@ -1,13 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>de.rieckpil</groupId>
-	<artifactId>javaee-8-jsf-archetype</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>Java EE 8 JSF Archetype</name>
-	<description>Maven Archetype for Bootstrapping Java EE 8 JSF Applications</description>
 
 	<parent>
 		<groupId>org.sonatype.oss</groupId>
@@ -15,11 +9,18 @@
 		<version>9</version>
 	</parent>
 
+	<groupId>de.rieckpil.archetypes</groupId>
+	<artifactId>javaee8-jsf</artifactId>
+	<version>1.0.0</version>
+	<name>Java EE 8 JSF Archetype</name>
+	<description>Maven Archetype for bootstrapping Java EE 8 JSF applications</description>
+
 	<organization>
 		<name>Philip Riecks</name>
 		<url>https://rieckpil.de</url>
 	</organization>
 	<inceptionYear>2018</inceptionYear>
+
 	<licenses>
 		<license>
 			<name>The Apache Software License, Version 2.0</name>
@@ -27,6 +28,7 @@
 			<distribution>repo</distribution>
 		</license>
 	</licenses>
+
 	<developers>
 		<developer>
 			<name>Philip Riecks</name>
@@ -106,6 +108,14 @@
 						</goals>
 					</execution>
 				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>3.1.0</version>
+				<configuration>
+					<addDefaultExcludes>false</addDefaultExcludes>
+				</configuration>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>

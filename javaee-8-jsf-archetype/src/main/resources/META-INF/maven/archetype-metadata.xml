@@ -28,6 +28,7 @@
 			<directory>src/main/webapp</directory>
 			<includes>
 				<include>**/*.xml</include>
+				<include>**/*.xhtml</include>
 				<include>**/*.properties</include>
 			</includes>
 		</fileSet>

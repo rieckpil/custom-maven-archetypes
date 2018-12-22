@@ -1,2 +1,2 @@
-FROM payara/server-full:5.183
+FROM payara/server-full:latest
 COPY target/${artifactId}.war $DEPLOY_DIR
