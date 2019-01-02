@@ -11,7 +11,7 @@
 
 	<groupId>de.rieckpil.archetypes</groupId>
 	<artifactId>javaee8-jsf</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<name>Java EE 8 JSF Archetype</name>
 	<description>Maven Archetype for bootstrapping Java EE 8 JSF applications</description>
 
