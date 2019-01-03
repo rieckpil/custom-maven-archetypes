@@ -73,7 +73,7 @@ With this Maven archetype you can bootstrap a simple Java EE 8 JSF application i
 ```
 mvn archetype:generate -DarchetypeGroupId=de.rieckpil.archetypes \
     -DarchetypeArtifactId=javaee8-jsf \
-    -DarchetypeVersion=1.0.0 \
+    -DarchetypeVersion=1.0.1 \
     -DgroupId=<your project Group Id> \
     -DartifactId=<your project artifact Id>
 ```
@@ -81,7 +81,7 @@ mvn archetype:generate -DarchetypeGroupId=de.rieckpil.archetypes \
 Bootstrapping and deploying a new application under **Windows** (Docker daemon needs to run):
 
 ```
-mvn archetype:generate -DarchetypeGroupId=de.rieckpil.archetypes -DarchetypeArtifactId=javaee8-jsf -DarchetypeVersion=1.0.0 -DgroupId=de.rieckpil.blog -DartifactId=jsf-app -DinteractiveMode=false
+mvn archetype:generate -DarchetypeGroupId=de.rieckpil.archetypes -DarchetypeArtifactId=javaee8-jsf -DarchetypeVersion=1.0.1 -DgroupId=de.rieckpil.blog -DartifactId=jsf-app -DinteractiveMode=false
 cd jsf-app
 buildAndRun.bat
 ```
@@ -89,7 +89,7 @@ buildAndRun.bat
 Bootstrapping and deploying a new application under **Linux/Mac** (Docker daemon needs to run):
 
 ```
-mvn archetype:generate -DarchetypeGroupId=de.rieckpil.archetypes -DarchetypeArtifactId=javaee8-jsf -DarchetypeVersion=1.0.0 -DgroupId=de.rieckpil.blog -DartifactId=jsf-app -DinteractiveMode=false
+mvn archetype:generate -DarchetypeGroupId=de.rieckpil.archetypes -DarchetypeArtifactId=javaee8-jsf -DarchetypeVersion=1.0.1 -DgroupId=de.rieckpil.blog -DartifactId=jsf-app -DinteractiveMode=false
 cd jsf-app
 chmod +x buildAndRun.sh
 ./buildAndRun.sh
