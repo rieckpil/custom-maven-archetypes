@@ -1,13 +1,18 @@
 # Custom Maven Archetypes
 
+Latest JSF archetype: [![Maven Central](https://img.shields.io/maven-central/v/de.rieckpil.archetypes/javaee8-jsf.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22de.rieckpil.archetypes%22%20AND%20a:%22javaee8-jsf%22)
+
+Latest Java EE 8 archetype: [![Maven Central](https://img.shields.io/maven-central/v/de.rieckpil.archetypes/javaee8.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22de.rieckpil.archetypes%22%20AND%20a:%22javaee8%22)
+
 Repository for custom Maven Archetypes:
 
+* [Java EE 8 with Microprofile 3.0 and Java 11 for JSF development](#java-ee-8-with-microprofile-30-and-java-11-for-jsf-development)
 * [Java EE 8 with Microprofile 2.0.1](#java-ee-8-with-microprofile-201)
 * [Java EE 8 with Microprofile 2.0.1 for JSF development](#java-ee-8-with-microprofile-201-for-jsf-development)
 
 ## Java EE 8 with Microprofile 2.0.1
 
-[![Maven Central](https://img.shields.io/maven-central/v/de.rieckpil.archetypes/javaee8.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22de.rieckpil.archetypes%22%20AND%20a:%22javaee8%22)
+
 
 With this Maven archetype you can bootstrap a simple Java EE 8 application in seconds. This archetype contains the following files/dependencies:
 
@@ -51,9 +56,9 @@ After Payara successfully started visit `http://localhost:8080/resources/sample`
 
 ---
 
-## Java EE 8 with Microprofile 3.0 and Java 11 for JSF development (version 2.0.0)
+## Java EE 8 with Microprofile 3.0 and Java 11 for JSF development
 
-[![Maven Central](https://img.shields.io/maven-central/v/de.rieckpil.archetypes/javaee8-jsf.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22de.rieckpil.archetypes%22%20AND%20a:%22javaee8-jsf%22)
+This requires Maven archetype version **2.0.0**
 
 With this Maven archetype you can bootstrap a simple Java EE 8 JSF application in seconds. This archetype contains the following files/dependencies:
 
@@ -98,9 +103,9 @@ chmod +x buildAndRun.sh
 After Open Liberty successfully started visit `http://localhost:9080/`
 
 
-## Java EE 8 with Microprofile 2.0.1 for JSF development (version 1.0.1)
+## Java EE 8 with Microprofile 2.0.1 for JSF development
 
-[![Maven Central](https://img.shields.io/maven-central/v/de.rieckpil.archetypes/javaee8-jsf.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22de.rieckpil.archetypes%22%20AND%20a:%22javaee8-jsf%22)
+This requires Maven archetype version **1.0.1**
 
 With this Maven archetype you can bootstrap a simple Java EE 8 JSF application in seconds. This archetype contains the following files/dependencies:
 
