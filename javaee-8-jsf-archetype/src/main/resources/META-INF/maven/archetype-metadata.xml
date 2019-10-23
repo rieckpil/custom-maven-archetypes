@@ -41,6 +41,7 @@
 				<include>Dockerfile</include>
 				<include>buildAndRun.sh</include>
 				<include>buildAndRun.bat</include>
+				<include>server.xml</include>
 			</includes>
 		</fileSet>
 	</fileSets>

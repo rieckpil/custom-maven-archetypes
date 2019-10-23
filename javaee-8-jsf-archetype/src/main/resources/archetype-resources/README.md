@@ -1,0 +1,1 @@
+Build and deploy the application with either `./buildAndRun.sh` or `buildAndRun.bat` 
