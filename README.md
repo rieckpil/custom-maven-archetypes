@@ -7,11 +7,11 @@
 Repository for custom Maven Archetypes:
 
 * [Java EE 8 with Microprofile 3.0 and Java 11 for JSF development](#java-ee-8-with-microprofile-30-and-java-11-for-jsf-development)
-* [Java EE 8 with Microprofile 3.0 and Java 11](#java-ee-8-with-microprofile-30)
-* [Java EE 8 with Microprofile 2.0.1](#java-ee-8-with-microprofile-201)
-* [Java EE 8 with Microprofile 2.0.1 for JSF development](#java-ee-8-with-microprofile-201-for-jsf-development)
+* [Java EE 8 with Microprofile 3.0 and Java 11](#java-ee-8-with-microprofile-30-and-java-11)
+* [Java EE 8 with Microprofile 2.0.1 and Java 8](#java-ee-8-with-microprofile-201-and-java-8)
+* [Java EE 8 with Microprofile 2.0.1 and Java 8 for JSF development](#java-ee-8-with-microprofile-201-and-java-8-for-jsf-development)
 
-## Java EE 8 with Microprofile 3.0
+## Java EE 8 with Microprofile 3.0 and Java 11
 
 With this Maven archetype you can bootstrap a simple Java EE 8 application in seconds. This archetype contains the following files/dependencies:
 
@@ -50,7 +50,7 @@ cd javaee-8-microservice
 
 After Open Liberty successfully started visit `http://localhost:9080/resources/sample`
 
-## Java EE 8 with Microprofile 2.0.1
+## Java EE 8 with Microprofile 2.0.1 and Java 8
 
 With this Maven archetype you can bootstrap a simple Java EE 8 application in seconds. This archetype contains the following files/dependencies:
 
@@ -139,7 +139,7 @@ chmod +x buildAndRun.sh
 After Open Liberty successfully started visit `http://localhost:9080/`
 
 
-## Java EE 8 with Microprofile 2.0.1 for JSF development
+## Java EE 8 with Microprofile 2.0.1 and Java 8 for JSF development
 
 With this Maven archetype you can bootstrap a simple Java EE 8 JSF application in seconds. This archetype contains the following files/dependencies:
 
