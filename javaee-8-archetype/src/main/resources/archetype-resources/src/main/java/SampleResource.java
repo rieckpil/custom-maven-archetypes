@@ -1,4 +1,4 @@
-package sample;
+package ${package};
 
 import javax.inject.Inject;
 import javax.ws.rs.GET;
