@@ -11,7 +11,7 @@
 
 	<groupId>de.rieckpil.archetypes</groupId>
 	<artifactId>jakartaee8</artifactId>
-	<version>0.9.1</version>
+	<version>1.0.0</version>
 	<name>Jakarta EE 8 Archetype</name>
 	<packaging>maven-archetype</packaging>
 
