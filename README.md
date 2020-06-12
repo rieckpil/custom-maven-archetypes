@@ -1,4 +1,4 @@
-# Bootstrapping of Java EE & Jakarta EE applications made simple
+# Start new Java EE & Jakarta EE projects with ease
 
 [![Jakarta EE Archetype Maven Central](https://img.shields.io/maven-central/v/de.rieckpil.archetypes/jakartaee8.svg?label=Jakarta%20EE%20Archetype%20Maven%20Central)](https://search.maven.org/search?q=g:%22de.rieckpil.archetypes%22%20AND%20a:%22jakartaee8%22)
 [![JSF Archetype Maven Central](https://img.shields.io/maven-central/v/de.rieckpil.archetypes/javaee8-jsf.svg?label=JSF%20Archetype%20Maven%20Central)](https://search.maven.org/search?q=g:%22de.rieckpil.archetypes%22%20AND%20a:%22javaee8-jsf%22)
