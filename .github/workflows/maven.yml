@@ -1,0 +1,14 @@
+name: Build Maven Archetypes
+on: [push, pull_request]
+jobs:
+  build-jdk11:
+    runs-on: ubuntu-latest
+    name: Build and Test Maven projects
+    steps:
+      - uses: actions/checkout@v1
+      - name: Set up JDK
+        uses: actions/setup-java@v1
+        with:
+          java-version: 11
+      - name: Build Maven projects
+        run: ./buildArchetypes.sh
