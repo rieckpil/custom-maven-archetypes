@@ -12,3 +12,5 @@ jobs:
           java-version: 11
       - name: Build Maven projects
         run: ./buildArchetypes.sh
+      - name: Verify Maven archetypes
+        run: ./verifyArchetypes.sh
