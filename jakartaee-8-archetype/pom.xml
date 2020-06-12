@@ -31,7 +31,6 @@
     <connection>scm:git:https://github.com/rieckpil/custom-maven-archetypes.git</connection>
     <url>https://github.com/rieckpil/custom-maven-archetypes</url>
     <developerConnection>scm:git:https://github.com/rieckpil/custom-maven-archetypes.git</developerConnection>
-    <tag>HEAD</tag>
   </scm>
 
   <developers>
