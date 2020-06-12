@@ -12,5 +12,5 @@ declare -a arr=(
 )
 
 for project in "${arr[@]}"; do
-  mvn -f $project/pom.xml clean deploy
+  mvn -f $project/pom.xml release:prepare release:perform
 done
