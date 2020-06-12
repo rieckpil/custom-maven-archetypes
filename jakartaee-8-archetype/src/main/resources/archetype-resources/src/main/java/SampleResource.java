@@ -10,13 +10,13 @@ import org.eclipse.microprofile.config.inject.ConfigProperty;
 @Path("sample")
 public class SampleResource {
 
-	@Inject
-	@ConfigProperty(name = "message")
-	private String message;
+  @Inject
+  @ConfigProperty(name = "message")
+  private String message;
 
-	@GET
-	public Response message() {
-		return Response.ok(message).build();
-	}
+  @GET
+  public Response message() {
+    return Response.ok(message).build();
+  }
 
 }

@@ -10,11 +10,11 @@ import org.eclipse.microprofile.config.inject.ConfigProperty;
 @RequestScoped
 public class SampleBean {
 
-	@Inject
-	@ConfigProperty(name = "message")
-	private String message;
+  @Inject
+  @ConfigProperty(name = "message")
+  private String message;
 
-	public String getMessage() {
-		return this.message;
-	}
+  public String getMessage() {
+    return this.message;
+  }
 }

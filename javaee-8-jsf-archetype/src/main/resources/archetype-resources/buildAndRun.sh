@@ -1,6 +1,5 @@
 #!/bin/sh
-if [ $(docker ps -a -f name=${artifactId} | grep -w ${artifactId} | wc -l) -eq 1 ]
-then
+if [ $(docker ps -a -f name=${artifactId} | grep -w ${artifactId} | wc -l) -eq 1 ]; then
   docker rm -f ${artifactId}
 fi
 mvn clean package && docker build -t ${groupId}/${artifactId} .
