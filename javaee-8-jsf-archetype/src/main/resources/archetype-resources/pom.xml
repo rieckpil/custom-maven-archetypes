@@ -15,9 +15,9 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <javaee-api.version>8.0</javaee-api.version>
-    <microprofile.version>3.0</microprofile.version>
-    <primefaces.version>7.0</primefaces.version>
-    <omnifaces.version>3.3</omnifaces.version>
+    <microprofile.version>3.3</microprofile.version>
+    <primefaces.version>8.0</primefaces.version>
+    <omnifaces.version>3.6.1</omnifaces.version>
     <all-themes.version>1.0.10</all-themes.version>
     <junit-jupiter.version>5.5.0</junit-jupiter.version>
     <mockito-core.version>3.1.0</mockito-core.version>
