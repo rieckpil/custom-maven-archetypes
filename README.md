@@ -6,18 +6,16 @@
 
 Repository for custom Maven Archetypes:
 
-* [Jakarta EE 8 with Microprofile 3.0 and Java 11](#jakarta-ee-8-with-microprofile-30-and-java-11)
-* [Java EE 8 with Microprofile 3.0 and Java 11 for JSF development](#java-ee-8-with-microprofile-30-and-java-11-for-jsf-development)
-* [Java EE 8 with Microprofile 3.0 and Java 11](#java-ee-8-with-microprofile-30-and-java-11)
-* [Java EE 8 with Microprofile 2.0.1 and Java 8](#java-ee-8-with-microprofile-201-and-java-8)
-* [Java EE 8 with Microprofile 2.0.1 and Java 8 for JSF development](#java-ee-8-with-microprofile-201-and-java-8-for-jsf-development)
+* [Jakarta EE 8 with Microprofile 3.3 and Java 11](#jakarta-ee-8-with-microprofile-33-and-java-11)
+* [Java EE 8 with Microprofile 3.3 and Java 11 for JSF development](#java-ee-8-with-microprofile-33-and-java-11-for-jsf-development)
+* [Java EE 8 with Microprofile 3.3 and Java 11](#java-ee-8-with-microprofile-33-and-java-11)
 
-## Jakarta EE 8 with Microprofile 3.0 and Java 11
+## Jakarta EE 8 with Microprofile 3.3 and Java 11
 
 With this Maven archetype you can bootstrap a simple Jakarta EE 8 application in seconds. This archetype contains the following files/dependencies:
 
 * Jakarta EE 8 API dependency
-* Microprofile 3.0 dependency
+* Microprofile 3.3 dependency
 * Mockito and JUnit 5 dependencies for efficient testing
 * `beans.xml` with `bean-discovery-mode="all"`
 * `persistence.xml` configured for JTA persistence unit
@@ -28,7 +26,7 @@ With this Maven archetype you can bootstrap a simple Jakarta EE 8 application in
 ```
 mvn archetype:generate -DarchetypeGroupId=de.rieckpil.archetypes \
     -DarchetypeArtifactId=jakartaee8 \
-    -DarchetypeVersion=1.0.0\
+    -DarchetypeVersion=1.1.0\
     -DgroupId=<your project Group Id> \
     -DartifactId=<your project artifact Id>
 ```
@@ -36,7 +34,7 @@ mvn archetype:generate -DarchetypeGroupId=de.rieckpil.archetypes \
 Bootstrapping and deploying a new application under **Windows** (Docker daemon needs to run):
 
 ```
-mvn archetype:generate -DarchetypeGroupId=de.rieckpil.archetypes -DarchetypeArtifactId=jakartaee8 -DarchetypeVersion=1.0.0 -DgroupId=de.rieckpil.blog -DartifactId=jakartaee-8-microservice -DinteractiveMode=false
+mvn archetype:generate -DarchetypeGroupId=de.rieckpil.archetypes -DarchetypeArtifactId=jakartaee8 -DarchetypeVersion=1.1.0 -DgroupId=de.rieckpil.blog -DartifactId=jakartaee-8-microservice -DinteractiveMode=false
 cd jakartaee-8-microservice
 buildAndRun.bat
 ```
@@ -44,7 +42,7 @@ buildAndRun.bat
 Bootstrapping and deploying a new application under **Linux/Mac** (Docker daemon needs to run):
 
 ```
-mvn archetype:generate -DarchetypeGroupId=de.rieckpil.archetypes -DarchetypeArtifactId=jakartaee8 -DarchetypeVersion=1.0.0 -DgroupId=de.rieckpil.blog -DartifactId=jakartaee-8-microservice -DinteractiveMode=false
+mvn archetype:generate -DarchetypeGroupId=de.rieckpil.archetypes -DarchetypeArtifactId=jakartaee8 -DarchetypeVersion=1.1.0 -DgroupId=de.rieckpil.blog -DartifactId=jakartaee-8-microservice -DinteractiveMode=false
 cd jakartaee-8-microservice
 ./buildAndRun.sh
 ```
@@ -52,12 +50,12 @@ cd jakartaee-8-microservice
 After Open Liberty successfully started visit `http://localhost:9080/resources/sample`
 
 
-## Java EE 8 with Microprofile 3.0 and Java 11
+## Java EE 8 with Microprofile 3.3 and Java 11
 
 With this Maven archetype you can bootstrap a simple Java EE 8 application in seconds. This archetype contains the following files/dependencies:
 
 * Java EE 8 API dependency
-* Microprofile 3.0 dependency
+* Microprofile 3.3 dependency
 * Mockito and JUnit 5 dependencies for efficient testing
 * `beans.xml` with `bean-discovery-mode="all"`
 * `persistence.xml` configured for JTA persistence unit
@@ -68,7 +66,7 @@ With this Maven archetype you can bootstrap a simple Java EE 8 application in se
 ```
 mvn archetype:generate -DarchetypeGroupId=de.rieckpil.archetypes \
     -DarchetypeArtifactId=javaee8 \
-    -DarchetypeVersion=2.0.0\
+    -DarchetypeVersion=2.1.0\
     -DgroupId=<your project Group Id> \
     -DartifactId=<your project artifact Id>
 ```
@@ -76,7 +74,7 @@ mvn archetype:generate -DarchetypeGroupId=de.rieckpil.archetypes \
 Bootstrapping and deploying a new application under **Windows** (Docker daemon needs to run):
 
 ```
-mvn archetype:generate -DarchetypeGroupId=de.rieckpil.archetypes -DarchetypeArtifactId=javaee8 -DarchetypeVersion=2.0.0 -DgroupId=de.rieckpil.blog -DartifactId=javaee-8-microservice -DinteractiveMode=false
+mvn archetype:generate -DarchetypeGroupId=de.rieckpil.archetypes -DarchetypeArtifactId=javaee8 -DarchetypeVersion=2.1.0 -DgroupId=de.rieckpil.blog -DartifactId=javaee-8-microservice -DinteractiveMode=false
 cd javaee-8-microservice
 buildAndRun.bat
 ```
@@ -84,67 +82,23 @@ buildAndRun.bat
 Bootstrapping and deploying a new application under **Linux/Mac** (Docker daemon needs to run):
 
 ```
-mvn archetype:generate -DarchetypeGroupId=de.rieckpil.archetypes -DarchetypeArtifactId=javaee8 -DarchetypeVersion=2.0.0 -DgroupId=de.rieckpil.blog -DartifactId=javaee-8-microservice -DinteractiveMode=false
+mvn archetype:generate -DarchetypeGroupId=de.rieckpil.archetypes -DarchetypeArtifactId=javaee8 -DarchetypeVersion=2.1.0 -DgroupId=de.rieckpil.blog -DartifactId=javaee-8-microservice -DinteractiveMode=false
 cd javaee-8-microservice
 ./buildAndRun.sh
 ```
 
 After Open Liberty successfully started visit `http://localhost:9080/resources/sample`
 
-## Java EE 8 with Microprofile 2.0.1 and Java 8
-
-With this Maven archetype you can bootstrap a simple Java EE 8 application in seconds. This archetype contains the following files/dependencies:
-
-* Java EE 8 API dependency
-* Microprofile 2.0.1 dependency
-* Mockito and JUnit dependencies for efficient testing
-* `beans.xml` with `bean-discovery-mode="all"`
-* `persistence.xml` configured for JTA persistence unit
-* `microprofile-config.properties` for configuration
-* JAX-RS configuration class
-* Sample JAX-RS REST endpoint (`/resources/sample`)
-* Dockerfile for latest Payara deployment
-* Build and deploy script as `.sh` and `.bat` 
-
-```
-mvn archetype:generate -DarchetypeGroupId=de.rieckpil.archetypes \
-    -DarchetypeArtifactId=javaee8 \
-    -DarchetypeVersion=1.0.2 \
-    -DgroupId=<your project Group Id> \
-    -DartifactId=<your project artifact Id>
-```
-
-Bootstrapping and deploying a new application under **Windows** (Docker daemon needs to run):
-
-```
-mvn archetype:generate -DarchetypeGroupId=de.rieckpil.archetypes -DarchetypeArtifactId=javaee8 -DarchetypeVersion=1.0.2 -DgroupId=de.rieckpil.blog -DartifactId=javaee-8-microservice -DinteractiveMode=false
-cd javaee-8-microservice
-buildAndRun.bat
-```
-
-Bootstrapping and deploying a new application under **Linux/Mac** (Docker daemon needs to run):
-
-```
-mvn archetype:generate -DarchetypeGroupId=de.rieckpil.archetypes -DarchetypeArtifactId=javaee8 -DarchetypeVersion=1.0.2 -DgroupId=de.rieckpil.blog -DartifactId=javaee-8-microservice -DinteractiveMode=false
-cd javaee-8-microservice
-chmod +x buildAndRun.sh
-./buildAndRun.sh
-```
-
-After Payara successfully started visit `http://localhost:8080/resources/sample`
-
----
-
-## Java EE 8 with Microprofile 3.0 and Java 11 for JSF development
+## Java EE 8 with Microprofile 3.3 and Java 11 for JSF development
 
 With this Maven archetype you can bootstrap a simple Java EE 8 JSF application in seconds. This archetype contains the following files/dependencies:
 
 * Java EE 8 API dependency
-* Microprofile 3.0 dependency
-* Primefaces 7.0 and all-themes dependency
-* Omnifaces 3.3 dependency
+* Microprofile 3.3 dependency
+* Primefaces 8.0 and all-themes dependency
+* Omnifaces 3.6.1 dependency
 * Mockito and JUnit 5 dependencies for efficient testing
-* `web.xml` for JSF development with `bootstrap` as selected Primfaces theme
+* `web.xml` for JSF development with `bootstrap` as selected PrimeFaces theme
 * `beans.xml` with `bean-discovery-mode="all"`
 * `persistence.xml` configured for JTA persistence unit
 * `microprofile-config.properties` for configuration
@@ -155,7 +109,7 @@ With this Maven archetype you can bootstrap a simple Java EE 8 JSF application i
 ```
 mvn archetype:generate -DarchetypeGroupId=de.rieckpil.archetypes \
     -DarchetypeArtifactId=javaee8-jsf \
-    -DarchetypeVersion=2.0.0 \
+    -DarchetypeVersion=2.1.0 \
     -DgroupId=<your project Group Id> \
     -DartifactId=<your project artifact Id>
 ```
@@ -163,7 +117,7 @@ mvn archetype:generate -DarchetypeGroupId=de.rieckpil.archetypes \
 Bootstrapping and deploying a new application under **Windows** (Docker daemon needs to run):
 
 ```
-mvn archetype:generate -DarchetypeGroupId=de.rieckpil.archetypes -DarchetypeArtifactId=javaee8-jsf -DarchetypeVersion=2.0.0 -DgroupId=de.rieckpil.blog -DartifactId=jsf-app -DinteractiveMode=false
+mvn archetype:generate -DarchetypeGroupId=de.rieckpil.archetypes -DarchetypeArtifactId=javaee8-jsf -DarchetypeVersion=2.1.0 -DgroupId=de.rieckpil.blog -DartifactId=jsf-app -DinteractiveMode=false
 cd jsf-app
 buildAndRun.bat
 ```
@@ -171,55 +125,10 @@ buildAndRun.bat
 Bootstrapping and deploying a new application under **Linux/Mac** (Docker daemon needs to run):
 
 ```
-mvn archetype:generate -DarchetypeGroupId=de.rieckpil.archetypes -DarchetypeArtifactId=javaee8-jsf -DarchetypeVersion=2.0.0 -DgroupId=de.rieckpil.blog -DartifactId=jsf-app -DinteractiveMode=false
+mvn archetype:generate -DarchetypeGroupId=de.rieckpil.archetypes -DarchetypeArtifactId=javaee8-jsf -DarchetypeVersion=2.1.0 -DgroupId=de.rieckpil.blog -DartifactId=jsf-app -DinteractiveMode=false
 cd jsf-app
 chmod +x buildAndRun.sh
 ./buildAndRun.sh
 ```
 
 After Open Liberty successfully started visit `http://localhost:9080/`
-
-
-## Java EE 8 with Microprofile 2.0.1 and Java 8 for JSF development
-
-With this Maven archetype you can bootstrap a simple Java EE 8 JSF application in seconds. This archetype contains the following files/dependencies:
-
-* Java EE 8 API dependency
-* Microprofile 2.0.1 dependency
-* Primefaces 6.2 and all-themes dependency
-* Omnifaces 3.2 dependency
-* Mockito and JUnit dependencies for efficient testing
-* `web.xml` for JSF development with `bootstrap` as selected Primfaces theme
-* `beans.xml` with `bean-discovery-mode="all"`
-* `persistence.xml` configured for JTA persistence unit
-* `microprofile-config.properties` for configuration
-* Simple `index.xhtml` with backing bean `SampleBean`
-* Dockerfile for latest Payara deployment
-* Build and deploy script as `.sh` and `.bat`
-
-```
-mvn archetype:generate -DarchetypeGroupId=de.rieckpil.archetypes \
-    -DarchetypeArtifactId=javaee8-jsf \
-    -DarchetypeVersion=1.0.1 \
-    -DgroupId=<your project Group Id> \
-    -DartifactId=<your project artifact Id>
-```
-
-Bootstrapping and deploying a new application under **Windows** (Docker daemon needs to run):
-
-```
-mvn archetype:generate -DarchetypeGroupId=de.rieckpil.archetypes -DarchetypeArtifactId=javaee8-jsf -DarchetypeVersion=1.0.1 -DgroupId=de.rieckpil.blog -DartifactId=jsf-app -DinteractiveMode=false
-cd jsf-app
-buildAndRun.bat
-```
-
-Bootstrapping and deploying a new application under **Linux/Mac** (Docker daemon needs to run):
-
-```
-mvn archetype:generate -DarchetypeGroupId=de.rieckpil.archetypes -DarchetypeArtifactId=javaee8-jsf -DarchetypeVersion=1.0.1 -DgroupId=de.rieckpil.blog -DartifactId=jsf-app -DinteractiveMode=false
-cd jsf-app
-chmod +x buildAndRun.sh
-./buildAndRun.sh
-```
-
-After Payara successfully started visit `http://localhost:8080/`
