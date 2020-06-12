@@ -4,8 +4,7 @@
 [![JSF Archetype Maven Central](https://img.shields.io/maven-central/v/de.rieckpil.archetypes/javaee8-jsf.svg?label=JSF%20Archetype%20Maven%20Central)](https://search.maven.org/search?q=g:%22de.rieckpil.archetypes%22%20AND%20a:%22javaee8-jsf%22)
 [![Java EE Archetype Maven Central](https://img.shields.io/maven-central/v/de.rieckpil.archetypes/javaee8.svg?label=Java%20EE%20Archetype%20Maven%20Central)](https://search.maven.org/search?q=g:%22de.rieckpil.archetypes%22%20AND%20a:%22javaee8%22)
 
-![Build Maven Archetypes](https://github.com/rieckpil/custom-maven-archetypes/workflows/Build%20Maven%20Archetypes/badge.svg)
-
+[![Build Maven Archetypes](https://github.com/rieckpil/custom-maven-archetypes/workflows/Build%20Maven%20Archetypes/badge.svg)](https://github.com/rieckpil/custom-maven-archetypes/actions)
 
 Repository for custom Maven Archetypes:
 
