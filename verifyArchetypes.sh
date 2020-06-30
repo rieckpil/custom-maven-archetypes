@@ -9,10 +9,13 @@ declare -A archetypes=(
   ["javaee8-jsf"]="javaee-8-jsf-archetype"
 )
 
+mkdir tmp
+cd tmp
+
 for project in "${!archetypes[@]}"; do
 
   ARCHETYPE_VERSION=$(mvn -q \
-    -f "${archetypes[$project]}/pom.xml" \
+    -f "../${archetypes[$project]}/pom.xml" \
     -Dexec.executable=echo \
     -Dexec.args='${project.version}' \
     --non-recursive \
