@@ -11,6 +11,4 @@ declare -a arr=(
   "javaee-8-jsf-archetype"
 )
 
-for project in "${arr[@]}"; do
-  mvn -f $project/pom.xml release:prepare release:perform
-done
+mvn release:prepare release:perform
