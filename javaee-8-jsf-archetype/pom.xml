@@ -13,5 +13,6 @@
   <version>2.1.1-SNAPSHOT</version>
   <name>Java EE 8 JSF Archetype</name>
   <description>Maven Archetype for bootstrapping Java EE 8 JSF applications</description>
+  <packaging>maven-archetype</packaging>
 
 </project>

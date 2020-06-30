@@ -12,6 +12,7 @@
   <artifactId>javaee8</artifactId>
   <version>2.1.1-SNAPSHOT</version>
   <name>Java EE 8 Archetype</name>
+  <description>Maven Archetype for bootstrapping Java EE 8 applications</description>
   <packaging>maven-archetype</packaging>
 
 </project>

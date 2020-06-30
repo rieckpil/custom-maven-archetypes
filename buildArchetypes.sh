@@ -9,6 +9,4 @@ declare -a arr=(
   "javaee-8-jsf-archetype"
 )
 
-for project in "${arr[@]}"; do
-  mvn -f $project/pom.xml install -Dgpg.skip
-done
+mvn install -Dgpg.skip
