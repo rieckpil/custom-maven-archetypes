@@ -5,7 +5,15 @@ jobs:
     runs-on: ubuntu-latest
     name: Build and Test Maven projects
     steps:
-      - uses: actions/checkout@v1
+      - name: Checkout code
+        uses: actions/checkout@v1
+      - name: Setup cache
+        uses: actions/cache@v1
+        with:
+          path: ~/.m2/repository
+          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+          restore-keys: |
+            ${{ runner.os }}-maven-
       - name: Set up JDK
         uses: actions/setup-java@v1
         with:
