@@ -4,13 +4,13 @@
   <parent>
     <groupId>de.rieckpil.archetypes</groupId>
     <artifactId>parent</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
 
   <groupId>de.rieckpil.archetypes</groupId>
   <artifactId>javaee8</artifactId>
-  <version>2.1.1</version>
+  <version>2.1.2-SNAPSHOT</version>
   <name>Java EE 8 Archetype</name>
   <description>Maven Archetype for bootstrapping Java EE 8 applications</description>
   <packaging>maven-archetype</packaging>
