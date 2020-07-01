@@ -10,7 +10,7 @@
 
   <groupId>de.rieckpil.archetypes</groupId>
   <artifactId>jakartaee8</artifactId>
-  <version>1.1.1-SNAPSHOT</version>
+  <version>1.1.1</version>
   <name>Jakarta EE 8 Archetype</name>
   <description>Maven Archetype for bootstrapping Jakarta EE 8 applications</description>
   <packaging>maven-archetype</packaging>
