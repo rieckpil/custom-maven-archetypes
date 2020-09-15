@@ -41,6 +41,8 @@ cd jakartaee-8-microservice
 buildAndRun.bat
 ```
 
+PS: If you are using PowerShell make sure to [put quotes around the parameters](https://stackoverflow.com/questions/20165674/maven-3-maven-in-5-minutes-mvn-archetypegenerate-command-not-working).
+
 Bootstrapping and deploying a new application under **Linux/Mac** (Docker daemon needs to run):
 
 ```
@@ -80,6 +82,8 @@ mvn archetype:generate -DarchetypeGroupId=de.rieckpil.archetypes -DarchetypeArti
 cd javaee-8-microservice
 buildAndRun.bat
 ```
+
+PS: If you are using PowerShell make sure to [put quotes around the parameters](https://stackoverflow.com/questions/20165674/maven-3-maven-in-5-minutes-mvn-archetypegenerate-command-not-working).
 
 Bootstrapping and deploying a new application under **Linux/Mac** (Docker daemon needs to run):
 
@@ -123,6 +127,8 @@ mvn archetype:generate -DarchetypeGroupId=de.rieckpil.archetypes -DarchetypeArti
 cd jsf-app
 buildAndRun.bat
 ```
+
+PS: If you are using PowerShell make sure to [put quotes around the parameters](https://stackoverflow.com/questions/20165674/maven-3-maven-in-5-minutes-mvn-archetypegenerate-command-not-working).
 
 Bootstrapping and deploying a new application under **Linux/Mac** (Docker daemon needs to run):
 
