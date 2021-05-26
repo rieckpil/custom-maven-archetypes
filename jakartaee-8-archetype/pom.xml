@@ -15,11 +15,4 @@
   <description>Maven Archetype for bootstrapping Jakarta EE 8 applications</description>
   <packaging>maven-archetype</packaging>
 
-
-  <scm>
-    <tag>parent-1.0.0</tag>
-    <connection>scm:git:ssh://git@github.com/rieckpil/custom-maven-archetypes.git</connection>
-    <developerConnection>scm:git:ssh://git@github.com/rieckpil/custom-maven-archetypes.git</developerConnection>
-    <url>ssh://git@github.com/rieckpil/custom-maven-archetypes</url>
-  </scm>
 </project>
