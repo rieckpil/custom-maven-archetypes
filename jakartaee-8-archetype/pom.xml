@@ -8,6 +8,7 @@
     <relativePath>../pom.xml</relativePath>
   </parent>
 
+  <groupId>de.rieckpil.archetypes</groupId>
   <artifactId>jakartaee8</artifactId>
   <version>1.1.2</version>
   <name>Jakarta EE 8 Archetype</name>
