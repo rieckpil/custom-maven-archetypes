@@ -4,11 +4,10 @@
   <parent>
     <groupId>de.rieckpil.archetypes</groupId>
     <artifactId>parent</artifactId>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>1.0.0</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
 
-  <groupId>de.rieckpil.archetypes</groupId>
   <artifactId>javaee8-jsf</artifactId>
   <version>2.1.2-SNAPSHOT</version>
   <name>Java EE 8 JSF Archetype</name>
