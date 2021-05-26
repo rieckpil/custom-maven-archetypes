@@ -26,5 +26,6 @@ gpg --send-keys
 3. Deploy the projects with
 
 ```bash
-./deploy.sh
+export GPG_TTY=$(tty)
+mvn clean deploy
 ```

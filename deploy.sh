@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# TODO: Due to the introduction of the parent POM, this deploy script currently fails
+
 set -e
 set -o pipefail
 
