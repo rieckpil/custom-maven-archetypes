@@ -19,8 +19,8 @@
     <primefaces.version>8.0</primefaces.version>
     <omnifaces.version>3.6.1</omnifaces.version>
     <all-themes.version>1.0.10</all-themes.version>
-    <junit-jupiter.version>5.5.0</junit-jupiter.version>
-    <mockito-core.version>3.1.0</mockito-core.version>
+    <junit-jupiter.version>5.7.2</junit-jupiter.version>
+    <mockito-core.version>3.9.0</mockito-core.version>
   </properties>
 
   <repositories>
@@ -84,7 +84,7 @@
       </plugin>
       <plugin>
         <artifactId>maven-surefire-plugin</artifactId>
-        <version>2.22.2</version>
+        <version>3.0.0-M5</version>
       </plugin>
     </plugins>
   </build>
