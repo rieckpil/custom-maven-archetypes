@@ -9,7 +9,7 @@
 
   <groupId>de.rieckpil.archetypes</groupId>
   <artifactId>parent</artifactId>
-  <version>1.0.1-SNAPSHOT</version>
+  <version>1.0.0</version>
   <name>Parent Archetype</name>
   <packaging>pom</packaging>
 
