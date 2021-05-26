@@ -28,7 +28,7 @@ With this Maven archetype you can bootstrap a simple Jakarta EE 8 application in
 ```
 mvn archetype:generate -DarchetypeGroupId=de.rieckpil.archetypes \
     -DarchetypeArtifactId=jakartaee8 \
-    -DarchetypeVersion=<insert_latest_archetype_version> \
+    -DarchetypeVersion=<latest archetype version> \
     -DgroupId=<your project Group Id> \
     -DartifactId=<your project artifact Id>
 ```
@@ -70,7 +70,7 @@ With this Maven archetype you can bootstrap a simple Java EE 8 application in se
 ```
 mvn archetype:generate -DarchetypeGroupId=de.rieckpil.archetypes \
     -DarchetypeArtifactId=javaee8 \
-    -DarchetypeVersion=<insert_latest_archetype_version> \
+    -DarchetypeVersion=<latest archetype version> \
     -DgroupId=<your project Group Id> \
     -DartifactId=<your project artifact Id>
 ```
@@ -115,7 +115,7 @@ With this Maven archetype you can bootstrap a simple Java EE 8 JSF application i
 ```
 mvn archetype:generate -DarchetypeGroupId=de.rieckpil.archetypes \
     -DarchetypeArtifactId=javaee8-jsf \
-    -DarchetypeVersion=<insert_latest_archetype_version>  \
+    -DarchetypeVersion=<latest archetype version> \
     -DgroupId=<your project Group Id> \
     -DartifactId=<your project artifact Id>
 ```
