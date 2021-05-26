@@ -15,4 +15,8 @@
   <description>Maven Archetype for bootstrapping Jakarta EE 8 applications</description>
   <packaging>maven-archetype</packaging>
 
+
+  <scm>
+    <tag>jakartaee8-1.1.2</tag>
+  </scm>
 </project>
