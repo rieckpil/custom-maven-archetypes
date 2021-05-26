@@ -19,6 +19,7 @@
     <connection>scm:git:ssh://git@github.com/rieckpil/custom-maven-archetypes.git</connection>
     <url>ssh://git@github.com/rieckpil/custom-maven-archetypes</url>
     <developerConnection>scm:git:ssh://git@github.com/rieckpil/custom-maven-archetypes.git</developerConnection>
+    <tag>jakartaee8-1.1.2</tag>
   </scm>
 
 </project>
