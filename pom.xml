@@ -9,7 +9,7 @@
 
   <groupId>de.rieckpil.archetypes</groupId>
   <artifactId>parent</artifactId>
-  <version>1.0.1</version>
+  <version>1.0.2-SNAPSHOT</version>
   <name>Parent Archetype</name>
   <packaging>pom</packaging>
 
@@ -45,7 +45,7 @@
     <connection>scm:git:ssh://git@github.com/rieckpil/custom-maven-archetypes.git</connection>
     <url>ssh://git@github.com/rieckpil/custom-maven-archetypes</url>
     <developerConnection>scm:git:ssh://git@github.com/rieckpil/custom-maven-archetypes.git</developerConnection>
-    <tag>parent-1.0.1</tag>
+    <tag>parent-1.0.0</tag>
   </scm>
 
   <properties>
