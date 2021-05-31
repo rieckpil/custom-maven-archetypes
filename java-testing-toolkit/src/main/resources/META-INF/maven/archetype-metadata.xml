@@ -24,22 +24,29 @@
         <include>**/*.properties</include>
       </includes>
     </fileSet>
-    <fileSet filtered="true" packaged="false" encoding="UTF-8">
-      <directory>src/main/webapp</directory>
-      <includes>
-        <include>**/*.xml</include>
-        <include>**/*.properties</include>
-      </includes>
-    </fileSet>
 
     <fileSet filtered="true" packaged="false" encoding="UTF-8">
       <directory></directory>
       <includes>
-        <include>.gitignore</include>
         <include>README.md</include>
+        <include>.gitignore</include>
+      </includes>
+    </fileSet>
+
+    <fileSet filtered="false" packaged="false" encoding="UTF-8">
+      <directory></directory>
+      <includes>
         <include>mvnw</include>
         <include>mvnw.cmd</include>
-        <include>.mvn</include>
+      </includes>
+    </fileSet>
+
+    <fileSet filtered="false" packaged="false" encoding="UTF-8">
+      <directory>.mvn/wrapper</directory>
+      <includes>
+        <include>maven-wrapper.jar</include>
+        <include>maven-wrapper.properties</include>
+        <include>MavenWrapperDownloader.java</include>
       </includes>
     </fileSet>
   </fileSets>
