@@ -75,6 +75,8 @@ With this Maven archetype you can bootstrap a simple Java 11 application with ba
 * A basic JUnit Jupiter test
 * A basic `.gitignore`
 
+Refer to the [Maven Setup For Testing Java Applications](https://rieckpil.de/maven-setup-for-testing-java-applications/) blog post on how to get started with this project.
+
 ## Jakarta EE 8 with Microprofile 3.3 and Java 11
 
 **Archetype name**: `jakartaee8`
