@@ -11,7 +11,7 @@ Maven Archetypes are a project templating toolkit to scaffold new Maven projects
 
 This repository contains a set of custom Maven Archetypes to conveniently bootstrap your next Java project:
 
-* [Java Project with Basic Testing Capabilities](#basic-java-project-with-basic-testing-capabilities)
+* [Java Project with Basic Testing Capabilities](#java-project-with-basic-testing-capabilities)
 * [Jakarta EE 8 with Microprofile 3.3 and Java 11](#jakarta-ee-8-with-microprofile-33-and-java-11)
 * [Java EE 8 with Microprofile 3.3 and Java 11 for JSF development](#java-ee-8-with-microprofile-33-and-java-11-for-jsf-development)
 * [Java EE 8 with Microprofile 3.3 and Java 11](#java-ee-8-with-microprofile-33-and-java-11)
