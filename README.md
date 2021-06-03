@@ -7,7 +7,7 @@
 
 [![Build Maven Archetypes](https://github.com/rieckpil/custom-maven-archetypes/workflows/Build%20Maven%20Archetypes/badge.svg)](https://github.com/rieckpil/custom-maven-archetypes/actions)
 
-Maven Archetypes are a project templating toolkit to scaffold new Maven projects in seconds.
+[Maven Archetypes](https://maven.apache.org/guides/introduction/introduction-to-archetypes.html) are a project templating toolkit to scaffold new Maven projects in seconds.
 
 This repository contains a set of custom Maven Archetypes to conveniently bootstrap your next Java project:
 
