@@ -7,6 +7,7 @@
   <name>Java Testing Toolkit</name>
   <description>Maven Archetype for bootstrapping a Java project with testing testing capabilities</description>
   <packaging>maven-archetype</packaging>
+  <url>https://github.com/rieckpil/custom-maven-archetypes</url>
 
   <organization>
     <name>Philip Riecks</name>
