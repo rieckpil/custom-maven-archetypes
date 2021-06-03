@@ -1,9 +1,9 @@
 name: Build Maven Archetypes
 on: [push, pull_request]
 jobs:
-  build-jdk11:
+  build-enterprise-java-archetypes:
     runs-on: ubuntu-latest
-    name: Build and Test Maven projects
+    name: Build and Test Maven Archetypes
     steps:
       - name: Checkout code
         uses: actions/checkout@v1
@@ -22,3 +22,43 @@ jobs:
         run: ./buildArchetypes.sh
       - name: Verify Maven archetypes
         run: ./verifyArchetypes.sh
+
+  build-basic-java-archetypes:
+    runs-on: ubuntu-latest
+    name: Build and Test Basic Maven Archetype
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Setup cache
+        uses: actions/cache@v1
+        with:
+          path: ~/.m2/repository
+          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+          restore-keys: |
+            ${{ runner.os }}-maven-
+      - name: Set up JDK
+        uses: actions/setup-java@v1
+        with:
+          java-version: 11
+      - name: Build and Verify Archetype
+        working-directory: testing-toolkit-archetype
+        run: |
+          ARCHETYPE_VERSION=$(mvn -q \
+              -f "pom.xml" \
+              -Dexec.executable=echo \
+              -Dexec.args='${project.version}' \
+              --non-recursive \
+              exec:exec)
+
+          mvn install -Dgpg.skip
+
+          mvn archetype:generate \
+            -DarchetypeGroupId=de.rieckpil.archetypes \
+            -DarchetypeArtifactId="testing-toolkit \
+            -DarchetypeVersion="$ARCHETYPE_VERSION"\
+            -DgroupId=org.mycompany \
+            -DartifactId=order-service \
+            -DinteractiveMode=false
+
+          cd order-service
+          ./mvnw verify
