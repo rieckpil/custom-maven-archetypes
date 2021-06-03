@@ -54,8 +54,8 @@ jobs:
 
           mvn archetype:generate \
             -DarchetypeGroupId=de.rieckpil.archetypes \
-            -DarchetypeArtifactId="testing-toolkit \
-            -DarchetypeVersion="$ARCHETYPE_VERSION"\
+            -DarchetypeArtifactId=testing-toolkit \
+            -DarchetypeVersion="$ARCHETYPE_VERSION" \
             -DgroupId=org.mycompany \
             -DartifactId=order-service \
             -DinteractiveMode=false
