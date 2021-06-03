@@ -7,9 +7,11 @@
 
 [![Build Maven Archetypes](https://github.com/rieckpil/custom-maven-archetypes/workflows/Build%20Maven%20Archetypes/badge.svg)](https://github.com/rieckpil/custom-maven-archetypes/actions)
 
-Repository for custom Maven Archetypes:
+Maven Archetypes are a project templating toolkit to scaffold new Maven projects in seconds.
 
-* [Basic Java Project with Testing Capabilities](#basic-java-project-with-testing-capabilities)
+This repository contains a set of custom Maven Archetypes to conveniently bootstrap your next Java project:
+
+* [Java Project with Basic Testing Capabilities](#basic-java-project-with-basic-testing-capabilities)
 * [Jakarta EE 8 with Microprofile 3.3 and Java 11](#jakarta-ee-8-with-microprofile-33-and-java-11)
 * [Java EE 8 with Microprofile 3.3 and Java 11 for JSF development](#java-ee-8-with-microprofile-33-and-java-11-for-jsf-development)
 * [Java EE 8 with Microprofile 3.3 and Java 11](#java-ee-8-with-microprofile-33-and-java-11)
@@ -65,7 +67,7 @@ cd order-service
 mvn package
 ```
 
-## Basic Java Project with Testing Capabilities
+## Java Project with Basic Testing Capabilities
 
 **Archetype name**: `testing-toolkit`
 
