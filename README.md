@@ -75,6 +75,7 @@ With this Maven archetype you can bootstrap a simple Java 11 application with ba
 * Mockito and JUnit 5 dependencies for efficient testing
 * Testcontainers for integration test
 * A basic JUnit Jupiter test
+* Maven Wrapper
 * A basic `.gitignore`
 
 Refer to the [Maven Setup For Testing Java Applications](https://rieckpil.de/maven-setup-for-testing-java-applications/) blog post on how to get started with this project.
