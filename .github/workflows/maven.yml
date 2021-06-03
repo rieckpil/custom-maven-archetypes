@@ -3,7 +3,7 @@ on: [push, pull_request]
 jobs:
   build-enterprise-java-archetypes:
     runs-on: ubuntu-latest
-    name: Build and Test Maven Archetypes
+    name: Build and Test Enterprise Java Maven Archetypes
     steps:
       - name: Checkout code
         uses: actions/checkout@v1
