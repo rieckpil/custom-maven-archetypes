@@ -29,7 +29,8 @@ mvn archetype:generate \
     -DarchetypeArtifactId=<archetype name> \
     -DarchetypeVersion=<latest archetype version> \
     -DgroupId=<your group id> \
-    -DartifactId=<your artifact id>
+    -DartifactId=<your artifact id> \
+    -DinteractiveMode=false
 ```
 
 Bootstrap a new Maven project using an archetype on Windows (CMD or PowerShell):
@@ -57,7 +58,8 @@ mvn archetype:generate \
     -DarchetypeArtifactId=testing-toolkit \
     -DarchetypeVersion=1.0.0 \
     -DgroupId=com.mycompany \
-    -DartifactId=order-service
+    -DartifactId=order-service \
+    -DinteractiveMode=false
 
 cd order-service
 mvn package
