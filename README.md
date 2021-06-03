@@ -52,7 +52,7 @@ The available archetype names are:
 
 You can find the latest version of each archetype as part of the badges on top of this README. The badges display the version with a preceding `v`, e.g. `v1.0.1` which you must remove.
 
-Complete example for Mac or Windows:
+Complete example for Mac or Linux:
 
 ```shell
 mvn archetype:generate \
@@ -62,7 +62,18 @@ mvn archetype:generate \
     -DgroupId=com.mycompany \
     -DartifactId=order-service \
     -DinteractiveMode=false
+```
+```shell
+cd order-service
+mvn package
+```
 
+Complete example for Windows:
+
+```shell
+mvn archetype:generate "-DarchetypeGroupId=de.rieckpil.archetypes"  "-DarchetypeArtifactId=testing-toolkit" "-DarchetypeVersion=1.0.0" "-DgroupId=com.mycompany" "-DartifactId=order-service" "-DinteractiveMode=false"
+```
+```shell
 cd order-service
 mvn package
 ```
