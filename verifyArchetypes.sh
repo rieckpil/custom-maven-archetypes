@@ -3,16 +3,18 @@
 set -e
 set -o pipefail
 
-declare -a archetypes=(
-  ["jakartaee8"]="jakartaee-8-archetype"
-  ["javaee8"]="javaee-8-archetype"
-  ["javaee8-jsf"]="javaee-8-jsf-archetype"
-)
+declare -A archetypes
+
+archetypes["jakartaee8"]="jakartaee-8-archetype"
+archetypes["javaee8"]="javaee-8-archetype"
+archetypes["javaee8-jsf"]="javaee-8-jsf-archetype"
 
 mkdir tmp
 cd tmp
 
 for project in "${!archetypes[@]}"; do
+
+  echo "### $project"
 
   ARCHETYPE_VERSION=$(mvn -q \
     -f "../${archetypes[$project]}/pom.xml" \

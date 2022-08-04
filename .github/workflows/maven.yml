@@ -20,7 +20,9 @@ jobs:
         run: ./mvnw install -Dgpg.skip
 
       - name: Verify Maven archetypes
-        run: ./verifyArchetypes.sh
+        run: |
+        bash --version
+        ./verifyArchetypes.sh
 
   build-basic-java-testing-archetype:
     runs-on: ubuntu-latest
