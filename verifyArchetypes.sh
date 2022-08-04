@@ -14,14 +14,14 @@ cd tmp
 
 for project in "${!archetypes[@]}"; do
 
-  ARCHETYPE_VERSION=$(../mvnw -q \
+  ARCHETYPE_VERSION=$(mvn -q \
     -f "../${archetypes[$project]}/pom.xml" \
     -Dexec.executable=echo \
     -Dexec.args='${project.version}' \
     --non-recursive \
     exec:exec)
 
-  ../mvnw archetype:generate \
+  mvn archetype:generate \
     -DarchetypeGroupId=de.rieckpil.archetypes \
     -DarchetypeArtifactId="$project" \
     -DarchetypeVersion="$ARCHETYPE_VERSION"\
