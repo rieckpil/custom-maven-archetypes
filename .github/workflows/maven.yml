@@ -51,7 +51,7 @@ jobs:
           mkdir tmp
           cd tmp
 
-          ../mvnw archetype:generate \
+          ../../mvnw archetype:generate \
             -DarchetypeGroupId=de.rieckpil.archetypes \
             -DarchetypeArtifactId=testing-toolkit \
             -DarchetypeVersion="$ARCHETYPE_VERSION" \
