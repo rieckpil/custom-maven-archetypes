@@ -14,5 +14,5 @@ declare -a arr=(
 )
 
 for project in "${arr[@]}"; do
-  mvn -f $project/pom.xml release:prepare release:perform
+  ./mvnw -f $project/pom.xml release:prepare release:perform
 done

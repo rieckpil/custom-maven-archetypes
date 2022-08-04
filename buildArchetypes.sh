@@ -10,4 +10,4 @@ declare -a arr=(
   "java-testing-toolkit"
 )
 
-mvn install -Dgpg.skip
+./mvnw install -Dgpg.skip

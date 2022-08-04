@@ -1,25 +1,24 @@
 name: Build Maven Archetypes
-on: [push, pull_request]
+on: push
+
 jobs:
   build-enterprise-java-archetypes:
     runs-on: ubuntu-latest
-    name: Build and Test Enterprise Java Maven Archetypes
+    name: Build and Test Maven Archetypes
     steps:
       - name: Checkout code
-        uses: actions/checkout@v1
-      - name: Setup cache
-        uses: actions/cache@v1
-        with:
-          path: ~/.m2/repository
-          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
-          restore-keys: |
-            ${{ runner.os }}-maven-
+        uses: actions/checkout@v3
+
       - name: Set up JDK
-        uses: actions/setup-java@v1
+        uses: actions/setup-java@v3
         with:
           java-version: 11
+          distribution: 'temurin'
+          cache: 'maven'
+
       - name: Build Maven projects
         run: ./buildArchetypes.sh
+
       - name: Verify Maven archetypes
         run: ./verifyArchetypes.sh
 
@@ -28,34 +27,31 @@ jobs:
     name: Build and Test Basic Maven Archetype
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
-      - name: Setup cache
-        uses: actions/cache@v1
-        with:
-          path: ~/.m2/repository
-          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
-          restore-keys: |
-            ${{ runner.os }}-maven-
+        uses: actions/checkout@v3
+
       - name: Set up JDK
-        uses: actions/setup-java@v1
+        uses: actions/setup-java@v3
         with:
           java-version: 11
+          distribution: 'temurin'
+          cache: 'maven'
+
       - name: Build and Verify Archetype
         working-directory: testing-toolkit-archetype
         run: |
-          ARCHETYPE_VERSION=$(mvn -q \
+          ARCHETYPE_VERSION=$(./mvnw -q \
               -f "pom.xml" \
               -Dexec.executable=echo \
               -Dexec.args='${project.version}' \
               --non-recursive \
               exec:exec)
 
-          mvn install -Dgpg.skip
+          ./mvnw install -Dgpg.skip
 
           mkdir tmp
           cd tmp
 
-          mvn archetype:generate \
+          ./mvnw archetype:generate \
             -DarchetypeGroupId=de.rieckpil.archetypes \
             -DarchetypeArtifactId=testing-toolkit \
             -DarchetypeVersion="$ARCHETYPE_VERSION" \
