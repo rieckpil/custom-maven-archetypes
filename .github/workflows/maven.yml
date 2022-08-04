@@ -21,8 +21,8 @@ jobs:
 
       - name: Verify Maven archetypes
         run: |
-        bash --version
-        ./verifyArchetypes.sh
+          bash --version
+          ./verifyArchetypes.sh
 
   build-basic-java-testing-archetype:
     runs-on: ubuntu-latest
