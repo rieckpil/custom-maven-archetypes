@@ -28,5 +28,5 @@ gpg --send-keys
 
 ```bash
 export GPG_TTY=$(tty)
-mvn clean deploy
+./mvnw deploy
 ```

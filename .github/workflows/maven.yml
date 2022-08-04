@@ -16,15 +16,15 @@ jobs:
           distribution: 'temurin'
           cache: 'maven'
 
-      - name: Build Maven projects
-        run: ./buildArchetypes.sh
+      - name: Build and Install the Maven archetypes
+        run: ./mvnw install -Dgpg.skip
 
       - name: Verify Maven archetypes
         run: ./verifyArchetypes.sh
 
-  build-basic-java-archetypes:
+  build-basic-java-testing-archetype:
     runs-on: ubuntu-latest
-    name: Build and Test Basic Maven Archetype
+    name: Build and Test Java Testing Maven Archetype
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
