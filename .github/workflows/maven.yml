@@ -4,7 +4,7 @@ on: push
 jobs:
   build-enterprise-java-archetypes:
     runs-on: ubuntu-latest
-    name: Build and Test Maven Archetypes
+    name: Build and Test Java Enterprise Maven Archetypes
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -39,19 +39,19 @@ jobs:
       - name: Build and Verify Archetype
         working-directory: testing-toolkit-archetype
         run: |
-          ARCHETYPE_VERSION=$(./mvnw -q \
+          ARCHETYPE_VERSION=$(../mvnw -q \
               -f "pom.xml" \
               -Dexec.executable=echo \
               -Dexec.args='${project.version}' \
               --non-recursive \
               exec:exec)
 
-          ./mvnw install -Dgpg.skip
+          ../mvnw install -Dgpg.skip
 
           mkdir tmp
           cd tmp
 
-          ./mvnw archetype:generate \
+          ../mvnw archetype:generate \
             -DarchetypeGroupId=de.rieckpil.archetypes \
             -DarchetypeArtifactId=testing-toolkit \
             -DarchetypeVersion="$ARCHETYPE_VERSION" \
