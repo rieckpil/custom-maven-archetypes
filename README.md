@@ -63,9 +63,10 @@ mvn archetype:generate \
     -DartifactId=order-service \
     -DinteractiveMode=false
 ```
+
 ```shell
 cd order-service
-mvn package
+./mvnw package
 ```
 
 Complete example for Windows:
@@ -75,7 +76,7 @@ mvn archetype:generate "-DarchetypeGroupId=de.rieckpil.archetypes"  "-Darchetype
 ```
 ```shell
 cd order-service
-mvn package
+mvnw package
 ```
 
 ## Java Project with Basic Testing Capabilities
@@ -87,6 +88,7 @@ With this Maven archetype you can bootstrap a simple Java 11 application with ba
 * Java 11
 * Mockito and JUnit 5 dependencies for efficient testing
 * Testcontainers for integration test
+* AssertJ for writing fluent assertions
 * A basic JUnit Jupiter test
 * Maven Wrapper
 * A basic `.gitignore`

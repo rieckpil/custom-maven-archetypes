@@ -24,9 +24,11 @@ gpg --gen-key
 gpg --send-keys
 ```
 
-3. Deploy the projects with
+3. Deploy the archetypes with
 
 ```bash
 export GPG_TTY=$(tty)
-./mvnw deploy
 ```
+
+- Java Enterprise archetypes: `./mvnw deploy`
+- Java Testing archetype: `cd testing-toolkit-archetype && ../mvnw deploy`
