@@ -12,9 +12,10 @@
     <maven.compiler.target>11</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <testcontainers.version>1.15.3</testcontainers.version>
-    <junit-jupiter.version>5.7.2</junit-jupiter.version>
-    <mockito.version>3.10.0</mockito.version>
+    <testcontainers.version>1.17.3</testcontainers.version>
+    <junit-jupiter.version>5.9.0</junit-jupiter.version>
+    <mockito.version>4.6.1</mockito.version>
+    <assertj.version>3.23.1</assertj.version>
   </properties>
 
   <dependencyManagement>
@@ -46,6 +47,12 @@
       <groupId>org.mockito</groupId>
       <artifactId>mockito-junit-jupiter</artifactId>
       <version>${mockito.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.assertj</groupId>
+      <artifactId>assertj-core</artifactId>
+      <version>${assertj.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>

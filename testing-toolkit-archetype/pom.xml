@@ -3,9 +3,9 @@
 
   <groupId>de.rieckpil.archetypes</groupId>
   <artifactId>testing-toolkit</artifactId>
-  <version>1.0.1-SNAPSHOT</version>
+  <version>1.0.2-SNAPSHOT</version>
   <name>Java Testing Toolkit</name>
-  <description>Maven Archetype for bootstrapping a Java project with testing testing capabilities</description>
+  <description>Maven Archetype for bootstrapping a Java project with basic testing capabilities</description>
   <packaging>maven-archetype</packaging>
   <url>https://github.com/rieckpil/custom-maven-archetypes</url>
 
