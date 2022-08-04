@@ -3,7 +3,7 @@ package ${package};
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.assertj.core.api.Assertions.assertThat;
 
 class MainTest {
 
@@ -20,6 +20,6 @@ class MainTest {
 
     String result = cut.format(input);
 
-    assertEquals("DUKE", result);
+    assertThat(result).isEqualTo("DUKE");
   }
 }
