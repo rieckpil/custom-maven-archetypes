@@ -30,5 +30,5 @@ gpg --send-keys
 export GPG_TTY=$(tty)
 ```
 
-- Java Enterprise archetypes: `./mvnw deploy`
-- Java Testing archetype: `cd testing-toolkit-archetype && ../mvnw deploy`
+- Java Enterprise archetypes: `./mvnw -B release:prepare release:perform`
+- Java Testing archetype: `cd testing-toolkit-archetype && ../mvnw -B release:prepare release:perform`
