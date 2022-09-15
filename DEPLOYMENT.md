@@ -1,5 +1,7 @@
 # How to deploy a new version
 
+**NOTE**: Preferably make changes on a branch and deploy from there.
+
 1. Adjust `settings.xml`
 
 ```xml
