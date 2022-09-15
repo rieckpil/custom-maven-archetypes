@@ -3,7 +3,7 @@
 
   <groupId>de.rieckpil.archetypes</groupId>
   <artifactId>testing-toolkit</artifactId>
-  <version>1.0.2</version>
+  <version>1.0.3-SNAPSHOT</version>
   <name>Java Testing Toolkit</name>
   <description>Maven Archetype for bootstrapping a Java project with basic testing capabilities</description>
   <packaging>maven-archetype</packaging>
@@ -35,7 +35,7 @@
     <connection>scm:git:ssh://git@github.com/rieckpil/custom-maven-archetypes.git</connection>
     <url>ssh://git@github.com/rieckpil/custom-maven-archetypes</url>
     <developerConnection>scm:git:ssh://git@github.com/rieckpil/custom-maven-archetypes.git</developerConnection>
-    <tag>testing-toolkit-1.0.2</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <properties>
