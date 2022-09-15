@@ -13,8 +13,8 @@ jobs:
         uses: actions/setup-java@v3
         with:
           java-version: 11
-          distribution: 'temurin'
-          cache: 'maven'
+          distribution: temurin
+          cache: maven
 
       - name: Build and Install the Maven archetypes
         run: ./mvnw install -Dgpg.skip
@@ -34,9 +34,9 @@ jobs:
       - name: Set up JDK
         uses: actions/setup-java@v3
         with:
-          java-version: 11
-          distribution: 'temurin'
-          cache: 'maven'
+          java-version: 17
+          distribution: temurin
+          cache: maven
 
       - name: Build and Verify Archetype
         working-directory: testing-toolkit-archetype

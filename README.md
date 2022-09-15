@@ -20,7 +20,7 @@ This repository contains a set of custom Maven Archetypes to conveniently bootst
 
 Prerequisites:
 
-* Java > 8
+* Java 8 or 17 (for `testing-toolkit` archetype)
 * Maven (either as a CLI tool or using the Maven Wrapper) > 3.6.1
 
 Bootstrap a new Maven project using an archetype on Mac and Linux:
@@ -50,7 +50,7 @@ The available archetype names are:
 - `javaee8`
 - `javaee8-jsf`
 
-You can find the latest version of each archetype as part of the badges on top of this README. The badges display the version with a preceding `v`, e.g. `v1.0.1` which you must remove.
+You can find the latest version of each archetype as part of the badges on top of this README. The badges display the version with a preceding `v`, e.g. `v1.0.2` which you must remove.
 
 Complete example for Mac or Linux:
 
@@ -58,7 +58,7 @@ Complete example for Mac or Linux:
 mvn archetype:generate \
     -DarchetypeGroupId=de.rieckpil.archetypes \
     -DarchetypeArtifactId=testing-toolkit \
-    -DarchetypeVersion=1.0.0 \
+    -DarchetypeVersion=1.0.2 \
     -DgroupId=com.mycompany \
     -DartifactId=order-service \
     -DinteractiveMode=false
@@ -72,7 +72,7 @@ cd order-service
 Complete example for Windows:
 
 ```shell
-mvn archetype:generate "-DarchetypeGroupId=de.rieckpil.archetypes"  "-DarchetypeArtifactId=testing-toolkit" "-DarchetypeVersion=1.0.0" "-DgroupId=com.mycompany" "-DartifactId=order-service" "-DinteractiveMode=false"
+mvn archetype:generate "-DarchetypeGroupId=de.rieckpil.archetypes"  "-DarchetypeArtifactId=testing-toolkit" "-DarchetypeVersion=1.0.2" "-DgroupId=com.mycompany" "-DartifactId=order-service" "-DinteractiveMode=false"
 ```
 ```shell
 cd order-service
@@ -83,9 +83,9 @@ mvnw package
 
 **Archetype name**: `testing-toolkit`
 
-With this Maven archetype you can bootstrap a simple Java 11 application with basic testing capabilities in seconds. This archetype contains the following files/dependencies:
+With this Maven archetype you can bootstrap a simple Java 17 application with basic testing capabilities in seconds. This archetype contains the following files/dependencies:
 
-* Java 11
+* Java 17
 * Mockito and JUnit 5 dependencies for efficient testing
 * Testcontainers for integration test
 * AssertJ for writing fluent assertions
