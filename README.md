@@ -20,7 +20,7 @@ This repository contains a set of custom Maven Archetypes to conveniently bootst
 
 Prerequisites:
 
-* Java 8
+* Java 8 or 17 (for `testing-toolkit` archetype)
 * Maven (either as a CLI tool or using the Maven Wrapper) > 3.6.1
 
 Bootstrap a new Maven project using an archetype on Mac and Linux:
