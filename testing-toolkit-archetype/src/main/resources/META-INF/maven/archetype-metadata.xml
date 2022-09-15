@@ -26,7 +26,7 @@
     </fileSet>
 
     <fileSet filtered="true" packaged="false" encoding="UTF-8">
-      <directory></directory>
+      <directory>/</directory>
       <includes>
         <include>README.md</include>
         <include>.gitignore</include>
@@ -34,7 +34,7 @@
     </fileSet>
 
     <fileSet filtered="false" packaged="false" encoding="UTF-8">
-      <directory></directory>
+      <directory>/</directory>
       <includes>
         <include>mvnw</include>
         <include>mvnw.cmd</include>
