@@ -32,3 +32,18 @@ export GPG_TTY=$(tty)
 
 - Java Enterprise archetypes: `./mvnw -B release:prepare release:perform`
 - Java Testing archetype: `cd testing-toolkit-archetype && ../mvnw -B release:prepare release:perform`
+
+## Troubleshooting
+
+Recover from a failed deployment to Nexus:
+
+- remove a tag from a failed release:
+
+```bash
+git tag -d <tag_name>
+git push --delete origin <tag_name>
+```
+
+- remove any `.releaseBackup`/`release.properties` files
+- undo version change in `pom.xml`
+- undo `[maven-release-plugin]` commits
